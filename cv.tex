@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Based on Audric Serador / sb2nov resume template (MIT)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{array}
+
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{4pt}]
+
+%----------CUSTOM COMMANDS----------
+% Left column wraps so long titles never overlap the date column
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}
+  \vspace{2pt}
+}
+
+% Same as above, plus an extra plain line (no bullet)
+\newcommand{\resumeSubheadingExtra}[5]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+      \small #5 & \\
+    \end{tabular*}
+  \vspace{2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=6pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=2pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Irene Lago Pato} \\[4pt]
+    {\large Research Assistant \& Student} \\[8pt]
+    \small
+    \href{mailto:i.lago@udc.es}{\faEnvelope\ i.lago@udc.es} ~~
+    \href{https://www.linkedin.com/in/irenelago/}{\faLinkedin\ irenelago} ~~
+    \href{https://github.com/irenelago}{\faGithub\ irenelago} ~~
+    \href{https://scholar.google.com/scholar?q=%22Irene+Lago\%22+%22Synthetic+Data+Characterization\%22}{\faGraduationCap\ Scholar} ~~
+    \href{https://orcid.org/0009-0007-1344-0100}{\faOrcid\ 0009-0007-1344-0100}
+\end{center}
+
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------
+\section{Research \& Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheadingExtra
+    {Research Assistant}{November 2025 -- Present}
+    {CITIC (Centre for Information and Communications Technology Research)}{}
+    {Language and Information Society Research Group}
+
+  \resumeSubheading
+    {Data \& Analytics Intern}{September 2025 -- November 2025}
+    {NTT DATA}{}
+
+  \resumeSubheading
+    {Ministry of Education Collaboration Scholar}{2025 -- 2026}
+    {Department of Computer Science and Information Technologies, Universidade da Coru\~{n}a}{}
+    \resumeItemListStart
+      \resumeItem{National grant provided to university students with top academic records to carry out research tasks within university departments. Only three positions were granted across that department.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Santander Universities Collaboration Scholar}{2024 -- 2025}
+    {Department of Computer Science and Information Technologies, Universidade da Coru\~{n}a}{}
+    \resumeItemListStart
+      \resumeItem{Merit-based scholarship granted to students with high academic performance to support introductory research activities and practical experience within university departments. Only one position was granted on this department.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\resumeSubHeadingListStart
+  \item
+    \textbf{Synthetic Data Characterization via Training Dynamics}\\[2pt]
+    {\small Irene Lago, Ana Ezquerro, David Vilares}\\[1pt]
+    {\small EMNLP 2026 --- Findings of EMNLP 2026 $\cdot$ Accepted}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor's Degree in Artificial Intelligence}{2022 -- 2026}
+    {Universidade da Coru\~{n}a (UDC)}{}
+  \vspace{-2pt}
+  {\small Grade average: 9.6/10}
+  \vspace{2pt}
+  \resumeSubheading
+    {Master's Degree in Research in Artificial Intelligence}{Starting October 2026}
+    {Universidad Internacional Men\'{e}ndez Pelayo (UIMP)}{}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.12in, label={}, itemsep=2pt, topsep=2pt]
+  \small{\item{
+    \textbf{Programming}{:} Python, Julia, Prolog, Clingo, Java, C\#, R, OCaml, SQL. \\
+    \textbf{Libraries \& Frameworks}{:} PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face Transformers, pandas, NumPy, Matplotlib, Seaborn. \\
+    \textbf{Methodologies}{:} CommonKADS, Agile (Scrum).
+  }}
+\end{itemize}
+
+%-----------AWARDS-----------
+\section{Academic Achievements \& Awards}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {28 Honours (Highest Academic Distinction)}{}
+    {Bachelor's Degree in Artificial Intelligence $|$ Universidade da Coru\~{n}a}{}
+    \resumeItemListStart
+      \resumeItem{The highest grade in the Spanish university system, given only to the top 5\% of students. In this degree, it is typically achieved by only 2 students maximum per subject.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {\'{A}ngela Ruiz Robles Award for Academic Excellence}{2022 -- 2023}
+    {Conseller\'{i}a de Educaci\'{o}n, Ciencia, Universidades e Formaci\'{o}n Profesional $|$ Xunta de Galicia}{}
+    \resumeItemListStart
+      \resumeItem{Recognizes the best academic records among university students in Galicia.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Excellence Award for the Highest Admission Grade}{2022}
+    {Bachelor's Degree in Artificial Intelligence $|$ Universidade da Coru\~{n}a}{}
+  \resumeSubheading
+    {Best ABAU (University Entrance Exams) Academic Records in Galicia}{2022}
+    {Universidade de Santiago de Compostela}{}
+\resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------
+\section{Languages}
+\begin{itemize}[leftmargin=0.12in, label={}, itemsep=2pt, topsep=2pt]
+  \small{\item{
+    \textbf{English}{:} C1 Level. \quad
+    \textbf{French}{:} B1 Level. \quad
+    \textbf{Galician \& Spanish}{:} Native.
+  }}
+\end{itemize}
+
+\end{document}
